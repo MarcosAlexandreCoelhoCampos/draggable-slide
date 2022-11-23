@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* GLOBAL */
+
+img {
+  overflow: hidden;
+  width: 100%;
+}
+
+h1 {
+  margin: 0.5rem 0;
+}
+
+/* CONTAINER AND CARDS */
+
+.container {
+  position: relative;
+  width: 1000px;
+  height: 200px;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.cards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  display: flex;
+  gap: 50px;
+  pointer-events: none;
+}
+
+.card {
+  width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.card_content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(44, 44, 44, 0.171);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
